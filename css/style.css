@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap");
+
+:root {
+  --primary-color: #003699;
+  --dark-color: #444444;
+  --light-color: #f5f5f5;
+  --win-color: #dc4535;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Nothing You Could Do", cursive;
+  line-height: 1.6;
+  background: rgb(13, 209, 199);
+  columns: #333333;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hiddern;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.restart-button {
+  display: none;
+  background: white;
+  padding: 0.4em 1.3rem;
+  cursor: pointer;
+  border: 2px dotted red;
+  padding: 5px;
+  border-radius: 60%;
+  margin-bottom: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.header h2 {
+  margin-bottom: 1rem;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  color: navy;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.score p:first-child {
+  background: yellow;
+}
+.score p:last-child {
+  background: lawngreen;
+}
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.choice:hover {
+  color: red;
+}
+.text-win {
+  color: white;
+}
+.text-lose {
+  color: darkgrey;
+}
+
+@media (max-width: 850px) {
+  .choice {
+    font-size: 90px;
+  }
+}
+@media (max-width: 640px) {
+  .choice {
+    font-size: 70px;
+  }
+  @media (max-width: 360px) {
+  }
+  .choice {
+    font-size: 40px;
+  }
+}
